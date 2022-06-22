@@ -1,0 +1,10 @@
+[grpA]
+sd202209-tgt-1
+sd202209-tgt-2
+
+[grpB]
+sd202209-tgt-3
+
+[all:vars]
+ansible_user=root
+ansible_password=password
