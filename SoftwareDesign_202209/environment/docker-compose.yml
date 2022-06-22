@@ -1,0 +1,17 @@
+---
+version: '3'
+name: sd202209
+networks:
+  ansible-net:
+    driver: bridge
+
+services:
+  tgt:
+    build: ./tgt
+    networks:
+      - ansible-net
+    privileged: true
+    stdin_open: true
+    tty: true
+    deploy:
+      replicas: 3
